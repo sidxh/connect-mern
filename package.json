@@ -5,8 +5,15 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-id-swiper": "^4.0.0",
+    "react-multi-carousel": "^2.8.4",
+    "react-parallax-tilt": "^1.7.142",
     "react-particles": "^2.9.3",
+    "react-router-dom": "^6.11.2",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^9.3.2",
     "tslib": "^2.5.2",
     "tsparticles": "^2.9.3",
     "tsparticles-engine": "^2.9.3"
