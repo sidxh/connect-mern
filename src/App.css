@@ -564,3 +564,102 @@ a, a:hover, a:focus {
 .rc-collapse.show{
   height: auto;
 }
+
+
+
+
+/* Responsiveness */
+
+
+@media only screen and (max-width: 500px) {
+
+  /* Landing Page Media Queries */
+
+  .landing{
+    padding: 60vh 0;
+    height: auto;
+  }
+
+  .logos{
+    height: 20rem;
+  }
+
+  .main-text>h1{
+    font-size: 10rem;
+  }
+
+  .main-text>p{
+    font-size: 2.5rem;
+  }
+
+  #landing-btn{
+    top: 5rem;
+    padding: 1rem 2rem;
+    font-size: 4rem;
+  }
+
+
+/* Vision */
+
+.headers>header>nav{
+  display: none;
+}
+
+.vision{
+  margin: 8rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.vision>h1{
+  font-size: 3.5rem;
+  border: 2px solid red;
+}
+
+.vision_content{
+  display: flex;
+  margin: 5rem 0;
+  flex-direction: column;
+}
+
+#vision_content2{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.vision_content>p{
+  padding: 2rem;
+  font-size: 1.8rem;
+  /* border: 2px solid red; */
+  background-color:rgb(55, 55, 55);
+  border-radius: 2rem;
+  width: 85vw;
+}
+
+.vision_content>img{
+  width: 85vw;
+  margin: 5rem;
+  /* border: 2px solid blue; */
+}
+
+.form-heading{
+  font-size: 2.5rem;
+}
+
+.opportunities{
+  padding: 0;
+  margin: 40vh 0;
+}
+
+.opportunities>img{
+  width: 90vw;
+}
+
+
+
+
+
+
+}
+
+

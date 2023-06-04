@@ -4,7 +4,7 @@ import { BrowserRouter, Routes, Route, NavLink, Outlet } from "react-router-dom"
 
 const Header = () => {
   return (
-    <>
+    <div className='headers'>
     <header>
         <nav>
             <NavLink id='logos_nav' 
@@ -42,7 +42,7 @@ const Header = () => {
         </nav>
     </header>
     <Outlet />
-    </>
+    </div>
   )
 }
 

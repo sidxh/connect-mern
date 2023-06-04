@@ -7,7 +7,7 @@ const SkillsPage = () => {
 
   return (
     <div className='skill_details'>
-            <DetailSidebar title="Navigation" />
+            <DetailSidebar />
             <CardsSet />        
     </div>
   )
