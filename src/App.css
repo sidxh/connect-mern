@@ -63,6 +63,10 @@ body{
     right:2rem;
     /* margin-left: 13rem; */
   }
+
+  #landing-p-mob{
+    display: none;
+  }
   
   .main-text{
     display: flex;
@@ -576,16 +580,19 @@ a, a:hover, a:focus {
   /* Landing Page Media Queries */
 
   .landing{
-    padding: 60vh 0;
+    padding: 150vh 0;
     height: auto;
+    margin: 0;
   }
 
   .logos{
-    height: 20rem;
+    height: 15rem;
   }
 
   .main-text>h1{
     font-size: 10rem;
+    /* display: none; */
+
   }
 
   .main-text>p{
@@ -593,9 +600,20 @@ a, a:hover, a:focus {
   }
 
   #landing-btn{
-    top: 5rem;
+    top: 10rem;
     padding: 1rem 2rem;
     font-size: 4rem;
+    /* display: none; */
+  }
+
+  #landing-p-desk{
+    display: none;
+  }
+
+  #landing-p-mob{
+    display: block;
+    font-size: 3.5rem;
+    margin-left: 2rem;
   }
 
 
@@ -654,6 +672,30 @@ a, a:hover, a:focus {
 .opportunities>img{
   width: 90vw;
 }
+
+/* Reach Out Media Queries */
+
+.reachout{
+  margin: 8rem 0;
+  padding: 0;
+}
+
+.reachout>h1{
+  font-size: 4rem;
+  /* border: 2px solid red; */
+}
+
+.dev_main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dev_cont{
+  width: 85vw;
+  margin-bottom: 5rem;
+}
+
 
 
 

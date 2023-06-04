@@ -16,9 +16,11 @@ const Landing = () => {
             <img className="logos" src={require('../logos.png')} />
           <div className="main-text">
               <h1>Connections</h1>
-              <p>Upskill By Harnessing the Power of Community!</p>
+              <p id="landing-p-desk">Upskill By Harnessing the Power of Community!</p>
         </div>
     </div>
+    <p id="landing-p-mob">Upskill By Harnessing the Power of Community!</p>
+
     
     </div> 
     <Link id="landing-btn" to="/vision">Get Started</Link>         
