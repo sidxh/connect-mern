@@ -6,20 +6,20 @@ const faqs = [
         id: 1,
         header: "Web Technologies",
         text: <div className='links_div'>
-        <Link to='/explore' >Frontend Development</Link>
-        <Link to='/explore' >Backend Development</Link>
-        <Link to='/explore' >AI / ML</Link>
-        <Link to='/explore' >Quantum Computing</Link>
-        <Link to='/explore' >Blockchain Development</Link>
-        <Link to='/explore' >Augmented & Virtual Reality</Link>
-        <Link to='/explore' >Cloud Computing</Link>
-        <Link to='/explore' >Data Science</Link>
-        <Link to='/explore' >DevOps</Link>
-        <Link to='/explore' >Cyber Security</Link>
-        <Link to='/explore' >Technical Writing</Link>
-        <Link to='/explore' >Game Development</Link>
-        <Link to='/explore' >App Development</Link>
-        <Link to='/explore' >Data Structures Algorithms</Link>
+        <Link to='/explore/webtech/frontend' >Frontend Development</Link>
+        <Link to='/explore/webtech/backend' >Backend Development</Link>
+        <Link to='/explore/webtech/machine' >AI / ML</Link>
+        <Link to='/explore/webtech/quantum' >Quantum Computing</Link>
+        <Link to='/explore/webtech/blockchain' >Blockchain Development</Link>
+        <Link to='/explore/webtech/arvr' >Augmented & Virtual Reality</Link>
+        <Link to='/explore/webtech/cloud' >Cloud Computing</Link>
+        <Link to='/explore/webtech/datasci' >Data Science</Link>
+        <Link to='/explore/webtech/devops' >DevOps</Link>
+        <Link to='/explore/webtech/cyber' >Cyber Security</Link>
+        <Link to='/explore/webtech/technical' >Technical Writing</Link>
+        <Link to='/explore/webtech/gamedev' >Game Development</Link>
+        <Link to='/explore/webtech/appdev' >App Development</Link>
+        <Link to='/explore/webtech/dsa' >Data Structures Algorithms</Link>
         </div>,
     },
     {

@@ -5,7 +5,7 @@ export default function Cards(props){
     return(
         <div className="cards_component">
             <img src={require("../images/user2.png")} />
-            <h1>Experience</h1>
+            <h1>{props.name}</h1>
             <ul>
                 <li>Line1</li>
                 <li>Line2</li>

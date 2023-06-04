@@ -1,7 +1,7 @@
 
 // For Particles.js
 
-import React, { useCallback } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import Particles from "react-particles";
 import { loadFull } from "tsparticles";
 import './App.css';
@@ -9,7 +9,7 @@ import particlesOptions from "./particles.json";
 
 // For Routes
 import ReactDOM from "react-dom"
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom"
+import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom"
 
 // For Importing Pages
 import Landing from './pages/Landing';
@@ -25,6 +25,16 @@ import Misc from './pages/Misc';
 import Header from "./components/Header"
 import SkillsPage from './pages/SkillsPage';
 
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [pathname]);
+  
+    return null;
+  };
+
 
 
 function App() {
@@ -34,6 +44,7 @@ function App() {
 
     return (
         <BrowserRouter>
+         <ScrollToTop />
         <Routes>
             <Route path="/" element={<Landing />} />
 
