@@ -696,6 +696,61 @@ a, a:hover, a:focus {
   margin-bottom: 5rem;
 }
 
+/* Explore Page Media Queries */
+
+.explore{
+  margin: 10rem 0;
+  padding: 0;
+}
+
+.explore_contents{
+  height: 20rem;
+}
+
+.search_bar{
+  position: absolute;
+  top: 25rem;
+}
+
+.domains{
+  margin: 5rem 0;
+}
+
+#shift_nav2{
+  margin: 1.2rem;
+}
+
+nav>*{
+  color: white;
+  font-size: 0.7rem;
+}
+
+.slick-slider{
+  margin: 0 auto;
+  width: 65vw;
+}
+
+/* Skill Page Media Queries */
+
+.skill_details{
+  display: flex;
+  flex-direction: column;
+}
+
+.skill_details>*{
+  height: auto;
+}
+
+.cards_set{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  flex-wrap: wrap;
+}
+
+.cards_component{
+  width: 40vw;
+}
+
 
 
 

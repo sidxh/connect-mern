@@ -35,8 +35,6 @@ const ScrollToTop = () => {
     return null;
   };
 
-
-
 function App() {
     const particlesInit = useCallback(main => {
         loadFull(main);
