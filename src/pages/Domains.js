@@ -27,7 +27,7 @@ export default function Domains(){
                 to="/explore/media"
                 id="shift_nav2"
                 className={({ isActive }) => (isActive ? 'active' : 'inactive')}
-                >Digital Media</NavLink>
+                >Media & Design</NavLink>
 
                 <NavLink
                 to="/explore/misc"

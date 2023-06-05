@@ -528,7 +528,7 @@ a, a:hover, a:focus {
 }
 .rc-accordion-body p{
   margin-bottom: 0;
-  font-size: 14px;
+  font-size: 1.3rem;
   font-weight: 400;
   line-height: 24px;
   color: #b3ceee;
@@ -555,6 +555,12 @@ a, a:hover, a:focus {
   flex-direction: column;
 }
 
+.links_div>*{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
 .rc-accordion-body p a{
   color: #ffffff;
 }
@@ -567,6 +573,14 @@ a, a:hover, a:focus {
 }
 .rc-collapse.show{
   height: auto;
+}
+
+
+.span_img{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 2rem;
+  margin-right: 1rem;
 }
 
 
@@ -758,5 +772,7 @@ nav>*{
 
 
 }
+
+
 
 
