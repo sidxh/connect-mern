@@ -388,10 +388,7 @@ font-size: 40px;
 .skill_details{
   display: flex;
   justify-content: space-around;
-}
-
-.skill_details>*{
-  height: 100vh;
+  margin-bottom: 10rem;
 }
 
 .sidebar_navigation>h1{
@@ -400,8 +397,7 @@ font-size: 40px;
 
 .sidebar_navigation{
   border: 5px solid red;
-  width: 20%;
-  margin-top: 11rem;
+  width: 20vw;
 }
 
 
@@ -413,10 +409,15 @@ font-size: 40px;
 .cards_set{
   /* border: 5px solid green; */
   padding: 2rem;
-  width: 70%;
+  width: 70vw;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 2rem;
+}
+
+
+.tabs>*{
+  color: #000000;
 }
 
 .cards_component{
@@ -426,21 +427,47 @@ font-size: 40px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2rem;
   background-color: #949494;
 }
 
-.cards_component>img{
-  height: 10rem;
+.tabs{
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-around;
 }
 
-.cards_component>ul{
+.tabs>*{
+  /* margin-right: 2rem; */
+  font-size: 1rem;
+}
+
+.tabs>button{
+  background-color: #949494;
+  border-bottom: none;
+  border-left: 0;
+  border-right: 0;
+}
+
+.cards_component>img{
+  margin: 2rem auto 0 auto;
+  height: 8rem;
+  width: 8rem;
+}
+
+.exp_ul{
   list-style: none;
+  border: 2px solid red;
+  margin: 1rem 0;
+}
+
+.contact{
+  border: 2px solid green;
+  margin: 1rem 0;
 }
 
 .cards_component>h1{
   font-size: 1.2rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 }
 
 /* Details Sidebar Navigation */
