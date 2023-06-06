@@ -402,7 +402,7 @@ font-size: 40px;
 
 .contact>button{
   margin: 1rem;
-  padding: 1rem 2rem;
+  padding: 0.5rem 1rem;
   background-color: #084461;
   border-radius: 2rem;
 }
@@ -418,7 +418,7 @@ font-size: 40px;
   padding: 2rem;
   width: 70vw;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
 }
 
@@ -428,14 +428,28 @@ font-size: 40px;
 }
 
 .cards_component{
-  border: 2px solid blue;
+  /* border: 2px solid white; */
   border-radius: 2rem;
-  height: 25rem;
+  /* height: 25rem; */
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  background-color: #949494;
+  /* flex-direction: column; */
+  background-color: #485174;
+  box-shadow: rgba(255, 255, 255, 0.344) 1.95px 1.95px 2.6px;
+  justify-content: space-around;
+
 }
+
+.cards_component_right{
+  /* border: 2px solid red; */
+  width: 70%;
+  padding-top: 1rem;
+}
+
+.cards_component:hover{
+  scale: 1.05;
+}
+
+
 
 .tabs{
   /* border: 2px solid red; */
@@ -449,32 +463,54 @@ font-size: 40px;
 }
 
 .tabs>button{
-  background-color: #949494;
+  background-color: #94949400;
+  color: white;
   border-bottom: none;
   border-left: 0;
   border-right: 0;
 }
 
-.cards_component>img{
-  margin: 2rem auto 0 auto;
+.cards_component_head{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* border: 2px solid red; */
+  margin: 1rem 0;
+}
+
+.cards_component_head>img{
   height: 8rem;
   width: 8rem;
+  /* display: none; */
 }
 
 .exp_ul{
   list-style: none;
-  border: 2px solid red;
-  margin: 1rem 0;
+  /* border: 2px solid red; */
+  margin: 1.5rem 1rem;
+}
+
+.exp_ul>li{
+  color:#000000;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.exp_ul>li>span{
+  font-size: 1rem;
 }
 
 .contact{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   margin: 1rem 0;
 }
 
-.cards_component>h1{
+.cards_component_head>h1{
   font-size: 1.2rem;
   margin: 1rem 0;
+  /* width: 50%; */
 }
 
 /* Details Sidebar Navigation */

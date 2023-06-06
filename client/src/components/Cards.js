@@ -27,8 +27,11 @@ const Cards = (props) => {
 
   return (
     <div className="cards_component">
+      <div className='cards_component_head'>
       <img src={require("../images/user2.png")} alt="User" />
       <h1>{props.name}</h1>
+      </div>
+      <div className="cards_component_right"> 
       <div className="tabs">
         <button
           className={`tab ${activeTab === 'experience' ? 'active' : ''}`}
@@ -48,9 +51,12 @@ const Cards = (props) => {
           <div>
             {/* Render experience content here */}
             <ul className='exp_ul'>
-              <li>{props.technicalSkillset}</li>
-              <li>{props.experience}</li>
-              <li>{props.achievement}</li>
+              <li>Technical Skillset</li>
+              <span>{props.technicalSkillset}</span>
+              <li>Experience</li>
+              <span>{props.experience}</span>
+              <li>Achievements</li>
+              <span>{props.achievement}</span>
             </ul>
           </div>
         )}
@@ -61,6 +67,7 @@ const Cards = (props) => {
             <button><a href={props.linkedin} target="_blank">LinkedIn</a></button>
           </div>
         )}
+      </div>
       </div>
     </div>
   );
