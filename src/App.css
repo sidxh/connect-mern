@@ -400,6 +400,13 @@ font-size: 40px;
   width: 20vw;
 }
 
+.contact>button{
+  margin: 1rem;
+  padding: 1rem 2rem;
+  background-color: #084461;
+  border-radius: 2rem;
+}
+
 
 .cards_set_head>h1{
   text-align: center;

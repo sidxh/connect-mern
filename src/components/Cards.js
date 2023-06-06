@@ -48,9 +48,9 @@ const Cards = (props) => {
           <div>
             {/* Render experience content here */}
             <ul className='exp_ul'>
-              <li>Line 1</li>
-              <li>Line 2</li>
-              <li>Line 3</li>
+              <li>{props.technicalSkillset}</li>
+              <li>{props.experience}</li>
+              <li>{props.achievement}</li>
             </ul>
           </div>
         )}
@@ -58,7 +58,7 @@ const Cards = (props) => {
           <div className='contact'>
             <h3>Contact</h3>
             {/* Render contact content here */}
-            <p>Contact information</p>
+            <button><a href={props.linkedin} target="_blank">LinkedIn</a></button>
           </div>
         )}
       </div>

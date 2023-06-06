@@ -25,7 +25,14 @@ const skillData = SkillsData.filter(
         <div className='cards_set'>
         {skillData.map((skillData, index) => (
             <>
-                <Cards name={skillData.name} />
+                <Cards 
+                name={skillData.name}
+                technicalSkillset={skillData.technicalSkillset}
+                experience={skillData.experience}
+                achievement={skillData.achievement}
+                linkedin={skillData.linkedin}
+                />
+
             </>        
       ))}
             
