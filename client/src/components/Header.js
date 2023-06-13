@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className='headers'>
     <header>
-        <nav>
+        <nav className='navbar'>
             <NavLink id='logos_nav' 
             to="/" className={({ isActive }) => (isActive ? 'inactive' : 'inactive')}>
             <img className='logos_2' src={require('../name-head.png')}/></NavLink>
@@ -17,13 +17,13 @@ const Header = () => {
 
             >Vision</NavLink>
 
-            <NavLink id='shift_nav' 
+            <NavLink id='shift_nav'
             to="/explore"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
 
             >Explore</NavLink>
 
-            <NavLink id='shift_nav' 
+            <NavLink id='shift_nav2'
             to="/opportunities"
             className={({ isActive }) => (isActive ? 'active' : 'inactive')}
 
@@ -35,7 +35,7 @@ const Header = () => {
 
             >Reachout</NavLink>
 
-            <NavLink id='btn_nav'
+            <NavLink id='shift_nav3'
             to="/listed"
             className={({ isActive }) => (isActive ? 'inactive' : 'inactive')}
             ><img className='logos_3' src={require('../get_listed.png')}/></NavLink>

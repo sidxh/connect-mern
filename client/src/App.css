@@ -112,6 +112,11 @@ body{
     color: white;
     font-size: 1.2rem;
   }
+
+  /* .navbar{
+    display: flex;
+    justify-content: flex-start;
+  } */
   
   #logos_nav{
     margin: 0 5rem;
@@ -137,6 +142,12 @@ body{
   }
   
   #btn_nav{
+    margin-left: 10rem;
+    font-weight: 700;
+  }
+
+
+  #shift_nav3{
     margin-left: 10rem;
     font-weight: 700;
   }
@@ -563,7 +574,7 @@ a, a:hover, a:focus {
   letter-spacing: 0.3px;
   color: #475f7b;
   overflow: hidden;
-  margin: 10rem 1rem;
+  margin: 6rem 1rem;
   text-align: center;
 }
 
@@ -713,6 +724,9 @@ a, a:hover, a:focus {
   /* border: 2px solid blue; */
 }
 
+#shift_nav2{
+  margin-right: 4rem;
+}
 
 
 /* Responsiveness */
@@ -722,6 +736,29 @@ a, a:hover, a:focus {
 
   /* Landing Page Media Queries */
 
+  .navbar{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  #logos_nav{
+    margin: 0;
+    margin-right: auto;
+  }
+  
+  #shift_nav{
+    margin-right: 1.5rem;
+  }
+
+  #shift_nav2{
+    display: none;
+  }
+
+  #shift_nav3{
+    display: none;
+  }
+  
   .landing{
     padding: 25vh 0;
     padding-top: 15vh;
@@ -779,9 +816,9 @@ a, a:hover, a:focus {
 
 /* Vision */
 
-.headers>header>nav{
+/* .headers>header>nav{
   display: none;
-}
+} */
 
 .vision{
   margin: 8rem auto;
@@ -935,6 +972,7 @@ nav>*{
 
 
 }
+
 
 
 
