@@ -13,15 +13,25 @@ const skillData = SkillsData.filter(
       skillData.skill.toLowerCase() === skill.toLowerCase()
   );
 
-  if (!skillData) {
+  if (skillData.length === 0) {
     // Handle case when skill data is not found
-    return <div>Invalid skill</div>;
+    return (
+      <div className='not-found'>
+            <h1>No Data Found For {skill}</h1>
+            <img id='no-data-img' src={require('../images/no-data.png')} />
+      </div>
+    )
+    
+    
+    
+;
   }
 
+  const firstSkill = skillData[0];
 
   return (
 <div className='cards_set_head'>
-        <h1>Web Technologies Mentors</h1>
+        <h1>{firstSkill.skill}</h1>
         <div className='cards_set'>
         {skillData.map((skillData, index) => (
             <>

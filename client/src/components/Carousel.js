@@ -18,7 +18,35 @@ const Carousel = (props) => {
         centerPadding: '20px',
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1390,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1090,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 700,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,

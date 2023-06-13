@@ -14,8 +14,3 @@ export default function Explore(){
         </div>
     )
 }
-
-
-{/* <div className="App">
-<Particles options={particlesOptions} init={particlesInit}/>           
-</div> */}
