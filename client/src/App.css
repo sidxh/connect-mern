@@ -743,8 +743,12 @@ a, a:hover, a:focus {
   }
 
   #logos_nav{
-    margin: 0;
+    margin: 0.75rem;
     margin-right: auto;
+  }
+
+  .logos_2{
+    height: 2rem;
   }
   
   #shift_nav{
