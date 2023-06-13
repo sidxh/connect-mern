@@ -37,13 +37,20 @@ const faqs = [
         </span>
       ),
   },
+
   {
     id: 6,
+    header: 'Why are some skills listed but do not have much data?',
+    text: `We are working on expanding and scaling our database which is currently facing some non-technical issues. Hopefully we'll get it resolved ASAP. Meanwhile you can check all of other domains that we have to offer!`,
+  },
+
+  {
+    id: 7,
     header: 'How can I contribute to ConnectLNM?',
     text: 'Absolutely! If you are an alumni or senior or anyone from the fraternity with expertise in a particular field, we encourage you to contribute to ConnectLNM. All you have to do is head to the "Get Listed!" section and fill out a small form specifying to us your skills and relevant experience. You can give back to the community by sharing your knowledge, providing guidance, and supporting the current students in their academic and professional endeavors.',
   },
   {
-    id: 7,
+    id: 8,
     header: 'I have encountered an issue or need assistance with ConnectLNM. How can I get support?',
     text: (
         <span>

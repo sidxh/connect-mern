@@ -17,8 +17,10 @@ const skillData = SkillsData.filter(
     // Handle case when skill data is not found
     return (
       <div className='not-found'>
-            <h1>No Data Found For {skill}</h1>
             <img id='no-data-img' src={require('../images/no-data.png')} />
+            <h1>No Data Yet</h1>
+            <p>We are working on expanding and scaling our database which is currently facing some non-technical issues. Hopefully we'll get it resolved ASAP. Meanwhile you can check all of other domains! </p>
+
       </div>
     )
     
