@@ -3,7 +3,34 @@ import Cards from './Cards'
 import { useParams } from 'react-router-dom'
 import SkillsData from '../pages/SkillsData'
 
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+
+
 const CardsSet = () => {
+
+  // const MyComponent = () => {
+    const [data, setData] = useState([]);
+  
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await axios.get('http://localhost:8000/web-technologies');
+          setData(response.data);
+        } catch (error) {
+          console.error(error);
+        }
+      };
+  
+      fetchData();
+    }, []);
+
+    return(
+      console.log(data)
+    )
+
+  // };
+
 
   const { category, skill } = useParams();
 
@@ -54,4 +81,64 @@ const skillData = SkillsData.filter(
   )
 }
 
+
+
+
 export default CardsSet
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
