@@ -321,7 +321,7 @@ app.get("/core-domains", (req, res) => {
     .then((applicants) => {
       let i = 1;
       const CoreDomainsApplicants = applicants.map((applicant) => {
-        let skill = applicant.get("Web Technologies (if proficient in any)");
+        let skill = applicant.get("Core Domains (If Proficient in any)");
         if (skill === "3D Printing") {
           skill = "3d-printing";
         } else if (skill === "Welding") {
