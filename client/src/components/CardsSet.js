@@ -43,10 +43,10 @@ const CardsSet = () => {
       skillData.skill.toLowerCase() === skill.toLowerCase()
   );
 
-  if (isLoading) {
-    // Render the loader while data is being fetched
-    return <div>Loading...</div>;
-  }
+  // if (isLoading) {
+  //   // Render the loader while data is being fetched
+  //   return <div>Loading...</div>;
+  // }
 
 
   if (specificData.length === 0) {
