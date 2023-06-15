@@ -18,7 +18,35 @@ const Carousel = (props) => {
         centerPadding: '20px',
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 1500,
+            settings: {
+              slidesToShow: 5,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1390,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 1090,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 700,
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
@@ -32,52 +60,52 @@ const Carousel = (props) => {
           <h1>{props.title}</h1>
           <Slider className='link_div' {...settings}>
             <Link className='link_hai' to={props.url1}>
-              <img src={require(`../images/domains/${props.img1}`)} alt="Image 1" />
+              <img src={require(`../images/domains/${props.img1}`)} alt="Image 1" data-skill-name={props.dataimg1} />
             </Link>
             <Link className='link_hai' to={props.url2}>
-              <img src={require(`../images/domains/${props.img2}`)} alt="Image 2" />
+              <img src={require(`../images/domains/${props.img2}`)} alt="Image 2" data-skill-name={props.dataimg2} />
             </Link>
             <Link className='link_hai' to={props.url3}>
-              <img src={require(`../images/domains/${props.img3}`)} alt="Image 3" />
+              <img src={require(`../images/domains/${props.img3}`)} alt="Image 3" data-skill-name={props.dataimg3} />
             </Link>
             <Link className='link_hai' to={props.url4}>
-              <img src={require(`../images/domains/${props.img4}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img4}`)} alt="Image 4" data-skill-name={props.dataimg4} />
             </Link>
             <Link className='link_hai' to={props.url5}>
-              <img src={require(`../images/domains/${props.img5}`)} alt="Image 1" />
+              <img src={require(`../images/domains/${props.img5}`)} alt="Image 1" data-skill-name={props.dataimg5} />
             </Link>
             <Link className='link_hai' to={props.url6}>
-              <img src={require(`../images/domains/${props.img6}`)} alt="Image 2" />
+              <img src={require(`../images/domains/${props.img6}`)} alt="Image 2" data-skill-name={props.dataimg6} />
             </Link>
             <Link className='link_hai' to={props.url7}>
-              <img src={require(`../images/domains/${props.img7}`)} alt="Image 3" />
+              <img src={require(`../images/domains/${props.img7}`)} alt="Image 3" data-skill-name={props.dataimg7} />
             </Link>
             <Link className='link_hai' to={props.url8}>
-              <img src={require(`../images/domains/${props.img8}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img8}`)} alt="Image 4" data-skill-name={props.dataimg8} />
             </Link>
             {props.img9 && <Link className='link_hai' to={props.url9}>
-              <img src={require(`../images/domains/${props.img9}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img9}`)} alt="Image 4" data-skill-name={props.dataimg9} />
             </Link>}
             {props.img10 && <Link className='link_hai' to={props.url10}>
-              <img src={require(`../images/domains/${props.img10}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img10}`)} alt="Image 4" data-skill-name={props.dataimg10} />
             </Link>}
             {props.img11 && <Link className='link_hai' to={props.url11}>
-              <img src={require(`../images/domains/${props.img11}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img11}`)} alt="Image 4" data-skill-name={props.dataimg11} />
             </Link>}
             {props.img12 && <Link className='link_hai' to={props.url12}>
-              <img src={require(`../images/domains/${props.img12}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img12}`)} alt="Image 4" data-skill-name={props.dataimg12} />
             </Link>}
             {props.img13 && <Link className='link_hai' to={props.url13}>
-              <img src={require(`../images/domains/${props.img13}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img13}`)} alt="Image 4" data-skill-name={props.dataimg13} />
             </Link>}
             {props.img14 && <Link className='link_hai' to={props.url14}>
-              <img src={require(`../images/domains/${props.img14}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img14}`)} alt="Image 4" data-skill-name={props.dataimg14} />
             </Link>}
             {props.img15 && <Link className='link_hai' to={props.url15}>
-              <img src={require(`../images/domains/${props.img15}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img15}`)} alt="Image 4" data-skill-name={props.dataimg15} />
             </Link>}
             {props.img16 && <Link className='link_hai' to={props.url16}>
-              <img src={require(`../images/domains/${props.img16}`)} alt="Image 4" />
+              <img src={require(`../images/domains/${props.img16}`)} alt="Image 4" data-skill-name={props.dataimg16} />
             </Link>}
           </Slider>
         </div>

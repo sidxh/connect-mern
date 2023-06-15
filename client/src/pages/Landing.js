@@ -10,7 +10,7 @@ const Landing = () => {
 }, [])
   return (
       <div className="landing">
-            <Particles options={particlesOptions} init={particlesInit}/>
+            <Particles className='particles-hai' options={particlesOptions} init={particlesInit}/>
             <div className='main'>
               <div className='new_main'>
             <img className="logos" src={require('../logos.png')} />
