@@ -1,7 +1,6 @@
 import React from 'react'
 import Cards from './Cards'
 import { useParams } from 'react-router-dom'
-import SkillsData from '../pages/SkillsData'
 
 import { useEffect, useState } from 'react';
 import axios from 'axios';
@@ -9,13 +8,14 @@ import axios from 'axios';
 
 const CardsSet = () => {
 
-  // const MyComponent = () => {
+    const { category, skill } = useParams();
+
     const [data, setData] = useState([]);
   
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await axios.get('http://localhost:8000/web-technologies');
+          const response = await axios.get(`http://localhost:8000/${category}`);
           setData(response.data);
         } catch (error) {
           console.error(error);
@@ -23,24 +23,24 @@ const CardsSet = () => {
       };
   
       fetchData();
-    }, []);
+    }, [category]);
 
-    return(
+    console.log(category)
       console.log(data)
-    )
-
-  // };
 
 
-  const { category, skill } = useParams();
 
-const skillData = SkillsData.filter(
+  // data.map(x=> console.log(x.name))
+
+  // const specificData = data
+
+  const specificData = data.filter(
     (skillData) =>
       skillData.category.toLowerCase() === category.toLowerCase() &&
       skillData.skill.toLowerCase() === skill.toLowerCase()
   );
 
-  if (skillData.length === 0) {
+  if (specificData.length === 0) {
     // Handle case when skill data is not found
     return (
       <div className='not-found'>
@@ -56,21 +56,21 @@ const skillData = SkillsData.filter(
 ;
   }
 
-  const firstSkill = skillData[0];
+  const firstSkill = specificData[0];
 
   return (
 <div className='cards_set_head'>
         <h1>{firstSkill.skill}</h1>
         <div className='cards_set'>
-        {skillData.map((skillData, index) => (
+        {specificData.map((specificData, index) => (
             <>
                 <Cards 
-                name={skillData.name}
-                skill={skillData.skill}
-                technicalSkillset={skillData.technicalSkillset}
-                experience={skillData.experience}
-                achievement={skillData.achievement}
-                linkedin={skillData.linkedin}
+                name={specificData.name}
+                skill={specificData.skill}
+                technicalSkillset={specificData.technicalSkillset}
+                experience={specificData.experience}
+                achievement={specificData.achievement}
+                linkedin={specificData.linkedin}
                 />
 
             </>        

@@ -28,7 +28,7 @@ const faqs = [
         text: <div className='links_div'>
         <Link to='/explore/non-technical/sales' ><span><img className='span_img' src={require('../images/domains/sales.png')} /></span>Sales</Link>
         <Link to='/explore/non-technical/business-associate' ><span><img className='span_img' src={require('../images/domains/business-associate.png')} /></span>Business Associate</Link>
-        <Link to='/explore/non-technical/scopy-writing' ><span><img className='span_img' src={require('../images/domains/copy-writing.png')} /></span>Copy Writing</Link>
+        <Link to='/explore/non-technical/copy-writing' ><span><img className='span_img' src={require('../images/domains/copy-writing.png')} /></span>Copy Writing</Link>
         <Link to='/explore/non-technical/social-media-management' ><span><img className='span_img' src={require('../images/domains/social-media-management.png')} /></span>Social Media Management</Link>
         <Link to='/explore/non-technical/community-management' ><span><img className='span_img' src={require('../images/domains/community-management.png')} /></span>Community Management</Link>
         <Link to='/explore/non-technical/digital-marketing' ><span><img className='span_img' src={require('../images/domains/digital-marketing.png')} /></span>Digital Marketing</Link>
