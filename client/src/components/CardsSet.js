@@ -39,6 +39,7 @@ const skillData = SkillsData.filter(
             <>
                 <Cards 
                 name={skillData.name}
+                skill={skillData.skill}
                 technicalSkillset={skillData.technicalSkillset}
                 experience={skillData.experience}
                 achievement={skillData.achievement}
