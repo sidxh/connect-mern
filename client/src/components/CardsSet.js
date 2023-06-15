@@ -11,12 +11,15 @@ const CardsSet = () => {
     const { category, skill } = useParams();
 
     const [data, setData] = useState([]);
+
+    const [isLoading, setIsLoading] = useState(true);
   
     useEffect(() => {
       const fetchData = async () => {
         try {
           const response = await axios.get(`http://localhost:8000/${category}`);
           setData(response.data);
+          setIsLoading(false);
         } catch (error) {
           console.error(error);
         }
@@ -39,6 +42,12 @@ const CardsSet = () => {
       skillData.category.toLowerCase() === category.toLowerCase() &&
       skillData.skill.toLowerCase() === skill.toLowerCase()
   );
+
+  if (isLoading) {
+    // Render the loader while data is being fetched
+    return <div>Loading...</div>;
+  }
+
 
   if (specificData.length === 0) {
     // Handle case when skill data is not found
