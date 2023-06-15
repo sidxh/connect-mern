@@ -38,10 +38,10 @@ const inventorySchema = new mongoose.Schema({
   RollNo: {
     type: String,
   },
-  LinkedIn: {
+  "LinkedIn Handle": {
     type: String,
   },
-  "Web Technologies (if proficient in any)": {
+  "Web Technologies": {
     type: String,
   },
   "What is your Technical Skillset (any software/language) in the selected domain? (WT)":
@@ -116,25 +116,6 @@ const inventorySchema = new mongoose.Schema({
 // Create a model based on the schema
 const Inventory = mongoose.model("inventory", inventorySchema);
 
-// const newItem = new Inventory({
-//   item: "Teri Maa Ka",
-//   qty: 500,
-//   tags: ["blank", "pink"],
-//   size: {
-//     h: 10,
-//     w: 50,
-//     uom: "cm",
-//   },
-// });
-
-// newItem
-//   .save()
-//   .then((savedItem) => {
-//     console.log("Item saved:", savedItem);
-//   })
-//   .catch((error) => {
-//     console.log("Error saving item:", error);
-//   });
 
 app.get("/items", (req, res) => {
   Inventory.find()
@@ -151,12 +132,12 @@ app.get("/items", (req, res) => {
 
 app.get("/web-technologies", (req, res) => {
   Inventory.find({
-    "Web Technologies (if proficient in any)": { $exists: true, $ne: "" },
+    "Web Technologies": { $exists: true, $ne: "" },
   })
     .then((applicants) => {
       let i = 1;
       const webTechApplicants = applicants.map((applicant) => {
-        let skill = applicant.get("Web Technologies (if proficient in any)");
+        let skill = applicant.get("Web Technologies");
         if (skill === "Frontend Development") {
           skill = "frontend-development";
         } else if (skill === "Backend Development") {
@@ -208,7 +189,7 @@ app.get("/web-technologies", (req, res) => {
           id: i++,
 
           email: applicant.get("Email ID"),
-          linkedin: applicant.LinkedIn,
+          linkedin: applicant.get("LinkedIn Handle"),
           // Add more fields as needed
         };
         
@@ -263,7 +244,7 @@ app.get("/non-technical", (req, res) => {
           id : i++,
           // id: uuidv4(), // Generate a unique ID
           email: applicant.get("Email ID"),
-          linkedin: applicant.LinkedIn,
+          linkedin: applicant.get("LinkedIn Handle"),
           // Add more fields as needed
         };
       });
@@ -321,7 +302,7 @@ app.get("/media-design", (req, res) => {
           id: i++,
           // id: uuidv4(), // Generate a unique ID
           email: applicant.get("Email ID"),
-          linkedin: applicant.LinkedIn,
+          linkedin: applicant.get("LinkedIn Handle"),
           // Add more fields as needed
         };
       });
@@ -392,7 +373,7 @@ app.get("/core-domains", (req, res) => {
           id: i++,
           // id: uuidv4(), // Generate a unique ID
           email: applicant.get("Email ID"),
-          linkedin: applicant.LinkedIn,
+          linkedin: applicant.get("LinkedIn Handle"),
           // Add more fields as needed
         };
       });
