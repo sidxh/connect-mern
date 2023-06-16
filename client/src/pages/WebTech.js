@@ -1,7 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
-import Cards from "../components/Cards"
-import DomainCards from "../components/DomainCards"
 import Carousel from "../components/Carousel"
 
 

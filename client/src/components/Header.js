@@ -1,6 +1,5 @@
 import React from 'react'
-import ReactDOM from "react-dom"
-import { BrowserRouter, Routes, Route, NavLink, Outlet } from "react-router-dom"
+import { NavLink, Outlet } from "react-router-dom"
 
 const Header = () => {
   return (
@@ -9,7 +8,7 @@ const Header = () => {
         <nav className='navbar'>
             <NavLink id='logos_nav' 
             to="/" className={({ isActive }) => (isActive ? 'inactive' : 'inactive')}>
-            <img className='logos_2' src={require('../name-head.png')}/></NavLink>
+            <img className='logos_2' src={require('../name-head.png')} alt=''/></NavLink>
 
             <NavLink id='shift_nav' 
             to="/vision"
@@ -38,7 +37,7 @@ const Header = () => {
             <NavLink id='shift_nav3'
             to="/listed"
             className={({ isActive }) => (isActive ? 'inactive' : 'inactive')}
-            ><img className='logos_3' src={require('../get_listed.png')}/></NavLink>
+            ><img className='logos_3' src={require('../get_listed.png')} alt=''/></NavLink>
         </nav>
     </header>
     <Outlet />

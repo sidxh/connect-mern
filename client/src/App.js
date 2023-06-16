@@ -1,15 +1,13 @@
 
 // For Particles.js
 
-import React, { useCallback, useEffect, useState } from 'react';
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
+// import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
+// import { loadFull } from "tsparticles";
 import './App.css';
-import particlesOptions from "./particles.json";
 
 // For Routes
-import ReactDOM from "react-dom"
-import { BrowserRouter, Routes, Route, NavLink, useLocation } from "react-router-dom"
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom"
 
 // For Importing Pages
 import Landing from './pages/Landing';
@@ -60,9 +58,9 @@ function App() {
     const [isLoading, setIsLoading] = useState(true);
 
 
-    const particlesInit = useCallback(main => {
-        loadFull(main);
-    }, []);
+    // const particlesInit = useCallback(main => {
+    //     loadFull(main);
+    // }, []);
 
     useEffect(() => {
         const timer = setTimeout(() => {

@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "react-router-dom"
 import Domains from "./Domains"
 import { Outlet } from "react-router-dom"
 

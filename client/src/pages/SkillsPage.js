@@ -1,5 +1,4 @@
-import React, { useRef, useState } from 'react'
-import Cards from '../components/Cards'
+import React from 'react'
 import DetailSidebar from '../components/DetailSidebar'
 import CardsSet from '../components/CardsSet'
 

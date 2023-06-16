@@ -12,14 +12,14 @@ const CardsSet = () => {
 
     const [data, setData] = useState([]);
 
-    const [isLoading, setIsLoading] = useState(true);
+    // const [isLoading, setIsLoading] = useState(true);
   
     useEffect(() => {
       const fetchData = async () => {
         try {
           const response = await axios.get(`http://localhost:8000/${category}`);
           setData(response.data);
-          setIsLoading(false);
+          // setIsLoading(false);
         } catch (error) {
           console.error(error);
         }
@@ -53,7 +53,7 @@ const CardsSet = () => {
     // Handle case when skill data is not found
     return (
       <div className='not-found'>
-            <img id='no-data-img' src={require('../images/no-data.png')} />
+            <img id='no-data-img' src={require('../images/no-data.png')} alt='No Data Available' />
             <h1>No Data Yet</h1>
             <p>We are working on expanding and scaling our database which is currently facing some non-technical issues. Hopefully we'll get it resolved ASAP. Meanwhile you can check all of other domains! </p>
 
