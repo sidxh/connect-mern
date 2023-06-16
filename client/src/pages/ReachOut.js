@@ -6,9 +6,9 @@ export default function ReachOut(){
         <div className="reachout">
         <h1>Meet The Developers</h1>
         <div className="dev_main">
-            <DevCards name="Siddhant Shitole" skill="UI Designer & Full-Stack Developer" descp="Lorem ipsum dolor sit amet, consectetuer adipisg elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate." />
+            <DevCards name="Siddhant Shitole" skill="UI Designer & Full-Stack Developer" descp="as a user interface designer, full-stack developer, and technical writer, Siddhant possesses a high proficiency in the MERN Stack, C++, and, most notably, GUI development having a high familiarity with various auxiliary frontend frameworks. Siddhant's core passion lies in demystifying technical subjects and crafting compelling digital experiences for people on the internet." />
             
-            <DevCards name="Divya Bajaj" skill="AI/ML & Backend Developer" descp="eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus" />
+            <DevCards name="Divya Bajaj" skill="AI/ML & Backend Developer" descp="an AI/ML developer experienced in NLP, backend (Node & FastAPI), data cleaning, sentiment analysis, neural networks, data science, Python, C++, DSA, and data analysis. Driven by a relentless pursuit of innovation, Divya Bajaj consistently delivers impactful results, pushing boundaries in the field of AI/ML and leveraging their diverse skill set for cutting-edge solutions." />
         </div>
         </div> 
     )
