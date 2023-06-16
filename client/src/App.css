@@ -249,7 +249,7 @@ body{
   
   #shift_nav{
     margin-right: 4rem;
-    border: 2px solid red;
+    /* border: 2px solid red; */
   }
   
   .active{
@@ -372,11 +372,11 @@ body{
         margin: 10rem 0;
       }
       
-      #shift_nav2{
-        /* margin: 1.5rem; */
+      /* #shift_nav2{
+        margin: 1.5rem;
         border: 2px solid green;
       }
-   
+    */
 
   /* ReachOut Page Specifics */
   
