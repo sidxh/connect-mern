@@ -35,7 +35,7 @@ const Header = () => {
             >Reachout</NavLink>
 
             <NavLink id='shift_nav3'
-            to="/reachout"
+            to="/reach-out"
             className={({ isActive }) => (isActive ? 'inactive' : 'inactive')}
             ><img className='logos_3' src={require('../get_listed.png')} alt=''/></NavLink>
         </nav>
