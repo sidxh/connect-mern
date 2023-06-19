@@ -753,8 +753,8 @@ a, a:hover, a:focus {
 .form-heading{
   margin: 4rem 0;
   margin-top: 1rem;
-  display: none;
 }
+
 
 .rc-accordion-toggle {
   display: flex;
@@ -1145,6 +1145,12 @@ nav>*{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.form-heading{
+  margin: 4rem 0;
+  margin-top: 1rem;
+  font-size: 2rem;
 }
 
 
