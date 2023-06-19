@@ -9,12 +9,14 @@ const DevCards = (props) => {
                 <p>{props.descp}</p>
                 <div className="dev_socials">
                     <button className='social_btn'>
-                        <div><img className='social_logo' src={require('../images/conect-linkedin.png')} alt='LinkedIN' /></div>
+                        <a href={props.linkedin} target="_blank" rel='noreferrer'>
+                            <div><img className='social_logo' src={require('../images/conect-linkedin.png')} alt='LinkedIN' /></div>
                         <h1>LinkedIn</h1>
+                        </a>
                     </button>
                     <button className='social_btn'>
-                        <div><img className='social_logo' src={require('../images/conect-github.png')} alt="Github" /></div>
-                        <h1>Github</h1>
+                        <a href={props.github} target="_blank" rel='noreferrer'><div><img className='social_logo' src={require('../images/conect-github.png')} alt="Github" /></div>
+                        <h1>Github</h1></a>
                     </button>
                 </div>
 

@@ -435,7 +435,6 @@ body{
     height: 1.2rem;
     margin-right: 0.5rem;
     background-color: #fff;
-
   }
 
   .domain_img{
@@ -443,8 +442,11 @@ body{
     border-radius: 2.5rem;
   }
 
+  .social_btn{
+    border-radius: 1rem;
+  }
 
-.social_btn{
+.social_btn>a{
   display: flex;
   align-items: center;
   padding: 0.5rem 1rem;
@@ -452,34 +454,14 @@ body{
   font-size: 0.5rem;
   font-weight: bold;
   background-color: #fff;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   box-shadow: inset 0 0 10px #000000;
 }
 
-.social_btn>*{
+.social_btn>a>*{
   background-color: #fff;
   color: #121516;
 }
-
-
-	.btn-linkedin {
-	  background: #0E76A8;
-	  border-radius: 0;
-	  color: #fff;
-	  border-width: 1px;
-	  border-style: solid;
-	  border-color: #084461;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
-	}
-	.btn-linkedin:link, .btn-linkedin:visited {
-	  color: #fff;
-	}
-	.btn-linkedin:active, .btn-linkedin:hover {
-	  background: #084461;
-	  color: #fff;
-	}
-
 
   .carousel_cont{
     /* width: 90%; */
@@ -1170,6 +1152,13 @@ nav>*{
 
 
 
+}
+
+
+.loader{
+  display: flex;
+  flex-direction: column;
+  gap: rem;
 }
 
 
