@@ -695,6 +695,16 @@ font-size: 40px;
 
 }
 
+.exp_ul>span>a{
+  color: #000000;
+  padding: 0.5rem 0.75rem;
+  border-radius: 10rem;
+  border: 1px solid black;
+  background-color: white;
+  /* background-color:  #cbdff8; */
+
+}
+
 .contact{
   /* border: 2px solid green; */
   margin: 1rem 0;

@@ -95,10 +95,12 @@ const CardsSet = () => {
                 <Cards 
                 name={specificData.name}
                 skill={specificData.skill}
-                technicalSkillset={specificData.technicalSkillset}
+                skillset={specificData.skillset}
                 experience={specificData.experience}
                 achievement={specificData.achievement}
+                rollno={specificData.rollno}
                 linkedin={specificData.linkedin}
+                email={specificData.email}
                 />
 
             </>        
