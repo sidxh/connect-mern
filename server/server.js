@@ -35,8 +35,10 @@ const inventorySchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  RollNo: {
-    type: String,
+  "Roll No": {
+    "": {
+      type: String,
+    },
   },
   "LinkedIn Handle": {
     type: String,
@@ -48,7 +50,7 @@ const inventorySchema = new mongoose.Schema({
     {
       type: String,
     },
-  "What is your Experience (however insignificant) in the selected domain? (WT)":
+  "What is your Experience (however little) in the selected domain? (WT)":
     {
       type: String,
     },
@@ -62,7 +64,7 @@ const inventorySchema = new mongoose.Schema({
     {
       type: String,
     },
-  "What is your Experience (however insignificant) in the selected domain? (NT)":
+  "What is your Experience (however little) in the selected domain? (NT)":
     {
       type: String,
     },
@@ -76,7 +78,7 @@ const inventorySchema = new mongoose.Schema({
     {
       type: String,
     },
-  "What is your Experience (however insignificant) in the selected domain? (MD)":
+  "What is your Experience (however little) in the selected domain? (MD)":
     {
       type: String,
     },
@@ -90,7 +92,7 @@ const inventorySchema = new mongoose.Schema({
     {
       type: String,
     },
-  "What is your Experience (however insignificant) in the selected domain? (CD)":
+  "What is your Experience (however little) in the selected domain? (CD)":
     {
       type: String,
     },
@@ -176,13 +178,13 @@ app.get("/web-technologies", (req, res) => {
           category: "web-technologies",
           skill: skill,
           name: applicant.Name,
-          // "Roll No." : applicant.get('Roll No'),
-          "Technical skillset": applicant.get(
+          // // "Roll No." : applicant.get('Roll No'),
+          "skillset": applicant.get(
             "What is your Technical Skillset (any software/language) in the selected domain? (WT)"
           ),
-          experience: applicant.get(
-            "What is your Experience (however insignificant) in the selected domain? (WT)"
-          ),
+          experience: applicant.get("What is your Experience (however little) in the selected domain? (WT)"),
+          rollno: applicant["Roll No"][""].toString(),
+
           achievement: applicant.get(
             "What are your Achievements (however small) in the selected domain? (WT)"
           ),
@@ -190,6 +192,8 @@ app.get("/web-technologies", (req, res) => {
 
           email: applicant.get("Email ID"),
           linkedin: applicant.get("LinkedIn Handle"),
+
+
           // Add more fields as needed
         };
         
@@ -235,9 +239,8 @@ app.get("/non-technical", (req, res) => {
           skillset: applicant.get(
             "What is your Skillset (any software/language) in the selected domain? (NT)"
           ),
-          experience: applicant.get(
-            "What is your Experience (however insignificant) in the selected domain? (NT)"
-          ),
+          experience: applicant.get("What is your Experience (however little) in the selected domain? (NT)"),
+          rollno: applicant["Roll No"][""].toString(),
           achievement: applicant.get(
             "What are your Achievements (however small) in the selected domain? (NT)"
           ),
@@ -293,9 +296,8 @@ app.get("/media-design", (req, res) => {
           skillset: applicant.get(
             "What is your Skillset (any software/language) in the selected domain? (MD)"
           ),
-          experience: applicant.get(
-            "What is your Experience (however insignificant) in the selected domain? (MD)"
-          ),
+          experience: applicant.get("What is your Experience (however little) in the selected domain? (MD)"),
+          rollno: applicant["Roll No"][""].toString(),
           achievement: applicant.get(
             "What are your Achievements (however small) in the selected domain? (MD)"
           ),
@@ -364,9 +366,8 @@ app.get("/core-domains", (req, res) => {
           skillset: applicant.get(
             "What is your Skillset (any software/language) in the selected domain? (CD)"
           ),
-          experience: applicant.get(
-            "What is your Experience (however insignificant) in the selected domain? (CD)"
-          ),
+          experience: applicant.get("What is your Experience (however little) in the selected domain? (CD)"),
+          rollno: applicant["Roll No"][""].toString(),
           achievement: applicant.get(
             "What are your Achievements (however small) in the selected domain? (CD)"
           ),
