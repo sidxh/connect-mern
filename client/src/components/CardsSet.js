@@ -73,8 +73,10 @@ const CardsSet = () => {
     return (
       <div className='not-found'>
             <img id='no-data-img' src={require('../images/no-data.png')} alt='No Data Available' />
+            <div className='not-found-text'>
             <h1>No Data Yet</h1>
             <p>We are working on expanding and scaling our database which is currently facing some non-technical issues. Hopefully we'll get it resolved ASAP. Meanwhile you can check all of other domains! </p>
+            </div>
 
       </div>
     )

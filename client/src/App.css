@@ -951,14 +951,20 @@ a, a:hover, a:focus {
   margin: 3rem 0;
 }
 
-.not-found>h1{
+.not-found-text{
+  background-color: #004147;
+  border-radius: 5rem;
+  margin: 5rem;
+}
+
+.not-found-text>h1{
   /* border: 2px solid green; */
   text-align: center;
   margin-top: 2rem;
   /* display: none; */
 }
 
-.not-found>p{
+.not-found-text>p{
   margin: 2rem;
   padding: 0 2rem;
   color:#949494;
