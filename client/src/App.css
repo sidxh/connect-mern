@@ -1,6 +1,8 @@
 
 /* General CSS */
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Inter&family=Karla:wght@500;800&family=Open+Sans:wght@800&display=swap');
+
 *{
     /* background-color: #121516; */
     color: white;
@@ -163,7 +165,7 @@ body{
     display: flex;
     flex-direction: column;
     /* position: absolute; */
-    margin: 25vh 22vw;
+    margin: 28vh 22vw;
     /* border: 2px solid red; */
     /* width: 52vw;
     height: 35vh; */
@@ -194,7 +196,65 @@ body{
     top: 2rem;
     right:2rem;
     /* margin-left: 13rem; */
+    
   }
+
+  #landing-btn {
+    align-items: center;
+    appearance: none;
+    background-color: #FCFCFD;
+    border-radius: 4px;
+    border-width: 0;
+    box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #36395A;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+
+        padding: 1rem 2.5rem;
+    color: #121516;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    top: 2rem;
+    right:2rem;
+  }
+  
+  #landing-btn:focus {
+    box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  }
+  
+  #landing-btn:hover {
+    box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  #landing-btn:active {
+    box-shadow: #D6D6E7 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
+
 
   #landing-p-mob{
     display: none;
@@ -207,7 +267,10 @@ body{
   }
   
   .main-text>h1{
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Karla', sans-serif;
+    /* font-family: 'Barlow', sans-serif; */
     font-weight: 700;
     font-size: 96px;
   }
@@ -219,6 +282,8 @@ body{
     font-style: normal;
     /* font-weight: 700; */
     font-size: 25px;
+    /* font-family: 'Open Sans', sans-serif; */
+
   }
 
   /* Header Component */
@@ -360,7 +425,12 @@ body{
     /* Domain Page Specifics */
   
     .domains{
-        margin: 10rem;
+          /* margin: 10rem; */
+          margin: 10rem 0;
+          margin-left: 3rem;
+          margin-bottom: 0;
+          /* border: 5px solid red; */
+          display: inline-block; 
       }
       
       nav{
@@ -1163,11 +1233,24 @@ nav>*{
   font-size: 2rem;
 }
 
+.domains{
+  margin: 3rem;
+}
+
+.search_bar{
+  position: absolute;
+  top:72%;
+  left: 25%;
+}
+
 
 
 
 
 }
+
+
+
 
 
 
