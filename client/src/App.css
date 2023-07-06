@@ -1237,6 +1237,16 @@ nav>*{
   margin: 3rem;
 }
 
+.search_bar{
+  position: absolute;
+  top:85%;
+  left: 25%;
+}
+
+
+
+
+
 }
 
 
