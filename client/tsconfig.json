@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2018",              // or a later version based on your needs
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react",                  // specify if you are using React
+    "moduleResolution": "node",      // allows TypeScript to use Node.js resolution strategy
+    "resolveJsonModule": true,       // allows importing JSON files as modules
+    "isolatedModules": true,         // enables faster builds for isolated modules
+    "noEmit": true                   // ensures TypeScript doesn't emit any files during build
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]  // adjust based on your project structure
+}
