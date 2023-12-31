@@ -1,5 +1,7 @@
 # ConnectLNM
 A Platform that aims to streamline university networking by seamlessly connecting students with mentors. While this version is built in the MERN Stack, I have also built another version using NextJS and Typescript.
+Link to the NextJS Typescript version 
+https://github.com/sidxh/connect-nextjs
 
 ![Landing Preview](https://i.postimg.cc/tJ2my26y/connectlnm.png)
 
